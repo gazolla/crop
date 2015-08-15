@@ -57,6 +57,9 @@ class MainViewController: UIViewController {
         var path = self.applicationDocumentsDirectory().path!
         path = path + "/" + "imgBar.png"
         UIImagePNGRepresentation(image).writeToFile(path, atomically: true)
+        
+        self.showAlert("ScreenShot", message: "Entire image done.")
+        
      }
     
     func crop2Action(){
@@ -79,6 +82,8 @@ class MainViewController: UIViewController {
         var path = self.applicationDocumentsDirectory().path!
         path = path + "/" + "img.png"
         UIImagePNGRepresentation(image).writeToFile(path, atomically: true)
+        
+        self.showAlert("ScreenShot", message: "Image without NavBar done.")
     }
     
     func applicationDocumentsDirectory() -> NSURL {
@@ -93,6 +98,13 @@ class MainViewController: UIViewController {
         return NSURL(string: documentsDirectory!)!
     }
     
+    func showAlert(title: String, message: String){
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in }
+        alertController.addAction(OKAction)
+        self.presentViewController(alertController, animated: true) {}
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
