@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081DBDA91B7FC7B800FFB984 /* forest.png in Resources */ = {isa = PBXBuildFile; fileRef = 081DBDA81B7FC7B800FFB984 /* forest.png */; };
 		088572401B7EF11000647A25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0885723F1B7EF11000647A25 /* AppDelegate.swift */; };
 		088572431B7EF11000647A25 /* crop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 088572411B7EF11000647A25 /* crop.xcdatamodeld */; };
 		088572451B7EF11000647A25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088572441B7EF11000647A25 /* Images.xcassets */; };
 		088572481B7EF11000647A25 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 088572461B7EF11000647A25 /* LaunchScreen.xib */; };
 		088572541B7EF11000647A25 /* cropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088572531B7EF11000647A25 /* cropTests.swift */; };
+		0885725E1B7EF12900647A25 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0885725D1B7EF12900647A25 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		081DBDA81B7FC7B800FFB984 /* forest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forest.png; sourceTree = "<group>"; };
 		0885723A1B7EF11000647A25 /* crop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0885723E1B7EF11000647A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0885723F1B7EF11000647A25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		0885724D1B7EF11000647A25 /* cropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		088572521B7EF11000647A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		088572531B7EF11000647A25 /* cropTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cropTests.swift; sourceTree = "<group>"; };
+		0885725D1B7EF12900647A25 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 				088572461B7EF11000647A25 /* LaunchScreen.xib */,
 				088572411B7EF11000647A25 /* crop.xcdatamodeld */,
 				0885723D1B7EF11000647A25 /* Supporting Files */,
+				0885725D1B7EF12900647A25 /* MainViewController.swift */,
 			);
 			path = crop;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 		0885723D1B7EF11000647A25 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				081DBDA81B7FC7B800FFB984 /* forest.png */,
 				0885723E1B7EF11000647A25 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -190,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				088572481B7EF11000647A25 /* LaunchScreen.xib in Resources */,
+				081DBDA91B7FC7B800FFB984 /* forest.png in Resources */,
 				088572451B7EF11000647A25 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0885725E1B7EF12900647A25 /* MainViewController.swift in Sources */,
 				088572401B7EF11000647A25 /* AppDelegate.swift in Sources */,
 				088572431B7EF11000647A25 /* crop.xcdatamodeld in Sources */,
 			);
@@ -399,6 +407,7 @@
 				088572591B7EF11000647A25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0885725A1B7EF11000647A25 /* Build configuration list for PBXNativeTarget "cropTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +416,7 @@
 				0885725C1B7EF11000647A25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
